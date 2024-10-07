@@ -1,0 +1,168 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background-color:black;
+    height: 100vh
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo img{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.comum{
+    display: flex;
+}
+flex{
+    display: flex;
+}
+/* ESTILO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .navegador{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+header a{
+    color: rgb(183, 66, 183);
+    text-decoration: none;
+    display: inline-block;
+}
+header a:hover{
+    color: pink;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+/* HOME CAPA*/
+.topo-do-site{
+    padding: 40px 4%;
+}
+
+.topo-do-site .txt-topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: purple;
+    font-size: 38px;
+    line-height: 40px;
+}
+.topo-do-site .txt-topo-site p{
+color: rgb(160, 53, 160);
+margin:40px 0
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate
+}
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top:30px;
+    }
+}
+
+/* sobremim */
+
+.img-sobre img{
+    max-width:600px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    margin-top: auto;
+}
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .text-sobre{
+    color: purple;
+    font-family: monospace;
+    margin-top: 50px;
+}
+
+.sobre .text-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .text-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+/* Projetos */
+
+.interface h2{
+    color: purple;
+    font-size: 40px;
+}
+.img-port{
+    width: 400px;
+    height: 460px;
+    background-color: purple;
+}
+
+.btn-projetos button{
+    background-color: blueviolet;
+    padding: 80px;
+    margin-top: 130px;
+    font-family: monospace;
+    font-size: 20px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-projetos button :hover{
+    box-shadow: 0px 0px 16px palevioletred;
+    transform: scale(1.5);
+    
+}
+/* Contato*/
+
+.txt-contato{
+    color: purple;
+    font-family: monospace;
+    font-size: 15px;
+    margin-left: 100px;
+    
+}
+
